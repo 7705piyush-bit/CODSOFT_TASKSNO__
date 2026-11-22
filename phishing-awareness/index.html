@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive guide to recognizing and preventing phishing attacks.">
+  <title>Phishing Awareness Training Program</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Phishing Awareness home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span>Phish<span>Shield</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#understanding">Learn</a>
+        <a href="#identifying">Identify</a>
+        <a href="#social-engineering">Social Engineering</a>
+        <a href="#case-studies">Cases</a>
+        <a href="#quiz">Take Quiz</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <div class="eyebrow"><span></span> Cybersecurity Training</div>
+          <h1>Phishing Awareness <em>Training Program</em></h1>
+          <p>Learn to recognize deceptive messages, verify digital requests, and protect your accounts and personal information.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#understanding">Start Learning <span aria-hidden="true">→</span></a>
+            <a class="button button-secondary" href="#quiz">Take the Quiz</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Phishing defense illustration">
+          <div class="shield">
+            <div class="shield-inner">
+              <span class="shield-check">✓</span>
+              <small>PROTECTION STATUS</small>
+              <strong>TRAINED</strong>
+            </div>
+          </div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="scan-line"></div>
+          <span class="float-badge badge-one">SECURE</span>
+          <span class="float-badge badge-two">VERIFY</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="objectives container" aria-label="Learning objectives">
+      <article>
+        <span class="objective-icon">01</span>
+        <div><h3>Recognize</h3><p>Spot suspicious signals in messages and websites.</p></div>
+      </article>
+      <article>
+        <span class="objective-icon">02</span>
+        <div><h3>Respond</h3><p>Know the safe actions to take and who to notify.</p></div>
+      </article>
+      <article>
+        <span class="objective-icon">03</span>
+        <div><h3>Prevent</h3><p>Apply practical habits that reduce your risk.</p></div>
+      </article>
+    </section>
+
+    <section class="section" id="understanding">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">01</span><p class="kicker">Core Concepts</p></div>
+          <h2>Understanding Phishing</h2>
+          <p>Phishing is a deceptive attempt to obtain sensitive information or persuade someone to take a harmful action.</p>
+        </div>
+
+        <div class="content-grid">
+          <article class="panel">
+            <h3>How phishing works</h3>
+            <ol class="process-list">
+              <li><span>1</span><div><strong>A deceptive message arrives</strong><p>It may look like it comes from a bank, employer, delivery company, or known contact.</p></div></li>
+              <li><span>2</span><div><strong>A trigger creates pressure</strong><p>The attacker uses urgency, fear, curiosity, authority, or reward to rush the target.</p></div></li>
+              <li><span>3</span><div><strong>The user is directed toward danger</strong><p>A link, attachment, request, or phone number may begin an attempt to steal data or money.</p></div></li>
+              <li><span>4</span><div><strong>Credentials or access are compromised</strong><p>Consequences can include identity theft, account takeover, fraud, or malware infection.</p></div></li>
+            </ol>
+          </article>
+          <article class="panel risk-panel">
+            <h3>Possible consequences</h3>
+            <div class="risk-list">
+              <div><span>›</span><p><strong>Identity theft</strong><br>Personal details are used without permission.</p></div>
+              <div><span>›</span><p><strong>Financial loss</strong><br>Fraudulent payments or unauthorized purchases occur.</p></div>
+              <div><span>›</span><p><strong>Account takeover</strong><br>Attackers gain access to email, social media, or work accounts.</p></div>
+              <div><span>›</span><p><strong>Malware infection</strong><br>A malicious file or link installs harmful software.</p></div>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="subheading">Types of phishing</h3>
+        <div class="card-grid">
+          <article class="info-card"><span class="card-icon">E</span><h4>Email phishing</h4><p>Broad email campaigns sent to many people using a familiar brand or urgent request.</p></article>
+          <article class="info-card"><span class="card-icon">S</span><h4>Spear phishing</h4><p>Highly targeted messages designed around a specific person or organization.</p></article>
+          <article class="info-card"><span class="card-icon">SMS</span><h4>Smishing</h4><p>Fraudulent SMS or messaging-app texts that use links or phone numbers.</p></article>
+          <article class="info-card"><span class="card-icon">V</span><h4>Vishing</h4><p>Voice calls that impersonate support teams, banks, officials, or employers.</p></article>
+          <article class="info-card"><span class="card-icon">W</span><h4>Whaling</h4><p>Attacks aimed at executives or individuals with high-value authority or access.</p></article>
+          <article class="info-card"><span class="card-icon">C</span><h4>Clone phishing</h4><p>A legitimate message is copied and altered to contain a harmful link or attachment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="identifying">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">02</span><p class="kicker">Red Flag Detection</p></div>
+          <h2>Identifying Phishing Attacks</h2>
+          <p>Pause and inspect the details. One or more warning signs should be enough to verify independently.</p>
+        </div>
+
+        <div class="example-grid">
+          <article class="email-example">
+            <div class="email-top"><span>From: <mark>accounts@secure-bank.example</mark></span><span>Today, 09:12</span></div>
+            <div class="email-body">
+              <div class="email-brand">BANK<span>SECURE</span></div>
+              <h3>Immediate action required: verify your account</h3>
+              <p>Your account will be suspended in <mark>30 minutes</mark>. Confirm your identity using the secure link below.</p>
+              <div class="fake-button">Verify My Account</div>
+              <p class="note">Fictional training example — do not enter credentials.</p>
+            </div>
+          </article>
+          <article class="warning-panel">
+            <h3>Warning signs highlighted</h3>
+            <ul class="check-list">
+              <li><span>!</span><p><strong>Suspicious sender</strong><br>The domain may resemble the real company but is not its official domain.</p></li>
+              <li><span>!</span><p><strong>Unrealistic deadline</strong><br>A 30-minute deadline creates fear and pressure.</p></li>
+              <li><span>!</span><p><strong>Unexpected request</strong><br>It asks you to verify personal or financial information.</p></li>
+              <li><span>!</span><p><strong>Generic greeting</strong><br>Legitimate organizations often personalize important notices.</p></li>
+              <li><span>!</span><p><strong>Urgency to click</strong><br>The message discourages careful verification.</p></li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="signal-grid">
+          <article><h4>Suspicious sender addresses</h4><p>Check the full address, domain spelling, reply-to address, and whether it matches the organization's official domain.</p></article>
+          <article><h4>Fake login pages</h4><p>Look for slight misspellings, poor design, missing HTTPS, and unexpected prompts for a password or OTP.</p></article>
+          <article><h4>Fraudulent URLs</h4><p>Read the domain from right to left. Watch for extra words, hyphens, numbers, or look-alike characters.</p></article>
+          <article><h4>Attachments and links</h4><p>Be cautious with unfamiliar file types, unexpected invoices, ZIP files, shortened links, and document macros.</p></article>
+        </div>
+
+        <div class="tactic-bar">
+          <strong>Also watch for</strong>
+          <span>Threats</span><span>Fake offers</span><span>Prize claims</span><span>Impersonation</span><span>Too-good-to-be-true deals</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="social-engineering">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">03</span><p class="kicker">Human Psychology</p></div>
+          <h2>Social Engineering Techniques</h2>
+          <p>Attackers often manipulate human behavior instead of relying on a technical flaw.</p>
+        </div>
+        <div class="technique-grid">
+          <article><span>01</span><h3>Urgency and fear</h3><p>“Act now or lose access” encourages rushed decisions without verification.</p></article>
+          <article><span>02</span><h3>Impersonation</h3><p>A caller or message pretends to be a bank, manager, relative, or trusted service.</p></article>
+          <article><span>03</span><h3>Baiting</h3><p>The attacker promises free software, exclusive content, prizes, or important files.</p></article>
+          <article><span>04</span><h3>Pretexting</h3><p>A believable invented scenario gives the attacker a reason to request information.</p></article>
+          <article><span>05</span><h3>Authority manipulation</h3><p>The message claims to come from a senior leader or government authority.</p></article>
+          <article><span>06</span><h3>Reward-based scams</h3><p>Unexpected refunds, gifts, money, or job opportunities tempt people to comply quickly.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="protection">
+      <div class="container protection-layout">
+        <div class="section-heading compact">
+          <div><span class="section-number">04</span><p class="kicker">Defense Practices</p></div>
+          <h2>Practical Security Tips</h2>
+          <p>Build a repeatable verification habit. Small precautions prevent many common attacks.</p>
+        </div>
+        <div class="tips-grid">
+          <article><span>✓</span><div><h3>Verify the sender</h3><p>Use a known phone number or separate communication channel. Do not reply to a suspicious message.</p></div></article>
+          <article><span>✓</span><div><h3>Inspect website URLs</h3><p>Type trusted addresses manually or use a saved bookmark. Check the actual domain and HTTPS status.</p></div></article>
+          <article><span>✓</span><div><h3>Protect OTPs and passwords</h3><p>Never share codes or passwords, even if the caller claims to be technical support or a bank.</p></div></article>
+          <article><span>✓</span><div><h3>Enable MFA</h3><p>Use an authenticator app or security key. Avoid approving unexpected sign-in prompts.</p></div></article>
+          <article><span>✓</span><div><h3>Keep files and links untrusted</h3><p>Do not open unexpected attachments or links. Confirm with the sender through another method.</p></div></article>
+          <article><span>✓</span><div><h3>Use strong, unique passwords</h3><p>Use a reputable password manager and change passwords promptly after suspected compromise.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="case-studies">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">05</span><p class="kicker">Real-World Scenarios</p></div>
+          <h2>Case Studies</h2>
+          <p>Study fictional examples inspired by common attack patterns.</p>
+        </div>
+        <div class="case-grid">
+          <article class="case-card">
+            <div class="case-header"><span>CASE 01</span><h3>Fake Bank KYC Update</h3></div>
+            <p><strong>Attack method:</strong> An email claims your account is blocked and directs you to a fake verification page.</p>
+            <p><strong>Warning signs:</strong> Threatening deadline, unofficial sender domain, and a link requesting OTP and password.</p>
+            <p><strong>Consequences:</strong> Account takeover and unauthorized financial transactions.</p>
+            <p><strong>Prevention:</strong> Open the bank's official app or type its known website address yourself.</p>
+          </article>
+          <article class="case-card">
+            <div class="case-header"><span>CASE 02</span><h3>Fake Delivery Notice</h3></div>
+            <p><strong>Attack method:</strong> A text says a package cannot be delivered and asks for a redelivery fee.</p>
+            <p><strong>Warning signs:</strong> Unexpected message, shortened link, small fee, and urgent action request.</p>
+            <p><strong>Consequences:</strong> Card data theft or malware from a malicious checkout page or file.</p>
+            <p><strong>Prevention:</strong> Track parcels only through the carrier's official app or website.</p>
+          </article>
+          <article class="case-card">
+            <div class="case-header"><span>CASE 03</span><h3>Fake Social Login Page</h3></div>
+            <p><strong>Attack method:</strong> A post offers a fake prize and sends users to a cloned social login screen.</p>
+            <p><strong>Warning signs:</strong> Prize offer, unfamiliar domain, poor branding, and password field in an unsolicited page.</p>
+            <p><strong>Consequences:</strong> Stolen login credentials and misuse of the victim's account.</p>
+            <p><strong>Prevention:</strong> Visit the platform directly and never enter credentials through an offered link.</p>
+          </article>
+          <article class="case-card">
+            <div class="case-header"><span>CASE 04</span><h3>Fake Internship Offer</h3></div>
+            <p><strong>Attack method:</strong> A message claims you were selected for an internship and asks for identity details or a fee.</p>
+            <p><strong>Warning signs:</strong> Job offer without an interview, free email domain, payment request, or attachment.</p>
+            <p><strong>Consequences:</strong> Identity theft, financial loss, or data collected for further scams.</p>
+            <p><strong>Prevention:</strong> Verify the recruiter and role through the organization's official careers page.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section quiz-section" id="quiz">
+      <div class="container">
+        <div class="section-heading">
+          <div><span class="section-number">06</span><p class="kicker">Knowledge Check</p></div>
+          <h2>Phishing Awareness Quiz</h2>
+          <p>Answer 12 questions. Feedback appears after each choice.</p>
+        </div>
+        <div class="quiz-shell">
+          <div class="quiz-progress">
+            <div class="progress-label"><span id="question-counter">Question 1 of 12</span><strong id="score-label">Score: 0</strong></div>
+            <div class="progress-track"><div id="progress-bar"></div></div>
+          </div>
+          <div id="quiz-content" aria-live="polite"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section checklist-section" id="checklist">
+      <div class="container checklist-layout">
+        <div>
+          <p class="kicker">Final Preparation</p>
+          <h2>Awareness Checklist</h2>
+          <p>Check each practice you are ready to follow.</p>
+        </div>
+        <div class="checklist-card">
+          <label><input type="checkbox"><span>I verify unexpected sender identities through a trusted channel.</span></label>
+          <label><input type="checkbox"><span>I inspect domains, URLs, attachments, and links before interacting.</span></label>
+          <label><input type="checkbox"><span>I never share passwords or one-time codes.</span></label>
+          <label><input type="checkbox"><span>I use multi-factor authentication and unique passwords.</span></label>
+          <label><input type="checkbox"><span>I pause when a message creates urgency or fear.</span></label>
+          <label><input type="checkbox"><span>I report suspicious messages to the appropriate team.</span></label>
+          <div class="completion-message" id="completion-message" role="status">Complete all checklist items to finish your awareness review.</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-content">
+      <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true">P</span><span>Phish<span>Shield</span></span></a>
+      <p>Cybersecurity awareness for safer digital decisions.</p>
+      <a href="#top" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
